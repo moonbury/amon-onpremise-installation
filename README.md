@@ -1,5 +1,5 @@
 # Amon On-Premise Installation
-This document describes the steps i go through during the installation of [amon on-premise] (https://docs.amon.cx/onpremise/).
+This document describes the steps i go through during the installation of [amon on-premise](https://docs.amon.cx/onpremise/).
 
 For some reason, I have to install a on-premise amon server for the team. The documenation from amon is good but due to a development conflict/bug, here is the solution.
 
@@ -53,4 +53,6 @@ Please consult https://docs.amon.cx/agent/#install for more detail.
 3.	Follow the manual installation steps and replace the API key and the server IP.
 4.	If success, you will see the agent is running and you can find it in the amon server.
 
+# Acknowledgments
+Big thank to [bigcalm](https://github.com/bigcalm/) for providing the installation scripts.
 
