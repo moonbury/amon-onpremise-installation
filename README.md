@@ -4,7 +4,7 @@ This document describes the steps i go through during the installation of [amon 
 For some reason, I have to install a on-premise amon server for the team. The documenation from amon is good but due to a development conflict/bug, here is the solution.
 
 # Amon On-Premise Monitoring Server
-Amon is a Django application, which stores all performance data in a MongoDB database. It is open source and you can find the code here.
+Amon is a Django application, which stores all performance data in a MongoDB database. It is open source and you can find the code [here](https://github.com/amonapp/amon).
 
 # Hardware Requirement 
 * 2GB of RAM, 4GB or More if you plan to monitor more then 20 machines
@@ -52,6 +52,15 @@ Please consult https://docs.amon.cx/agent/#install for more detail.
 2.	Obtain the API Key from the server. 
 3.	Follow the manual installation steps and replace the API key and the server IP.
 4.	If success, you will see the agent is running and you can find it in the amon server.
+
+# Public Amon
+If you are installing Amon for public, replace the public to private on step 5. 
+```
+#./provision.sh private
+```
+I have problem getting the SSL certificate due to the IP and domain are mapped. Please map the IP and domain before the installation start.
+
+
 
 # Acknowledgments
 Big thank to [bigcalm](https://github.com/bigcalm/) for providing the installation scripts.
