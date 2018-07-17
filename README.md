@@ -13,8 +13,10 @@ Amon is a Django application, which stores all performance data in a MongoDB dat
 * Ubuntu 16.04 LTE (suggested)
 
 # Setup Amon Server
-1.	Install git. #sudo apt-get install git
-2.	Download the easy setup scripts from https://github.com/bigcalm/amon-server. Go to /opt/ and use the command #git clone https://github.com/bigcalm/amon-server
+1.	Install git. 
+```#sudo apt-get install git```
+2.	Download the easy setup scripts from https://github.com/bigcalm/amon-server. Go to /opt/ and use the command 
+```#git clone https://github.com/bigcalm/amon-server```
 3.	Go to the amon-server folder and edit the provision.sh. Change the email address in Line 7.
 4.	Edit the amon.sh and replace the line 37 by  
 ```
@@ -37,7 +39,7 @@ systemctl restart amon.service
 ```
 *code from https://github.com/amonapp/amon/issues/211. 
 
-5.	Assume for private use, run the #./provision.sh private
+5.	Assume for private use, run the ```#./provision.sh private```
 6.	If everything goes well, you should have amon, postfix, mongo and nginx installed and running.
 7.	Edit the /opt/amon/amon/settings.py and the ALLOWED_HOST on line 214 and restart the nignx
 8.	Edit the /opt/amon/amon/settings.py to the following and restart the postfix.
@@ -49,7 +51,7 @@ systemctl restart amon.service
 Please consult https://docs.amon.cx/agent/#install for more detail.
 * I cannot install via the installation url, so I manual install.
 1.	Make sure you have python 2.7 installed in your monitor PC.
-2.	Obtain the API Key from the server. 
+2.	Obtain the API Key from the server from amon admin page.
 3.	Follow the manual installation steps and replace the API key and the server IP.
 4.	If success, you will see the agent is running and you can find it in the amon server.
 
