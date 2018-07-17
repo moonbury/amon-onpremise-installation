@@ -57,7 +57,7 @@ Please consult https://docs.amon.cx/agent/#install for more detail.
 
 # Public Amon
 If you are installing Amon for public, replace the public to private on step 5. ```#./provision.sh private```
-I have problem getting the SSL certificate due to the IP and domain are mapped. Please map the IP and domain before the installation start.
+I have problem getting the SSL certificate due to the IP and domain are not mapped. Please make sure the IP and domain are mapped before the installation start.
 
 
 
