@@ -56,14 +56,11 @@ Please consult https://docs.amon.cx/agent/#install for more detail.
 4.	If success, you will see the agent is running and you can find it in the amon server.
 
 # Public Amon
-If you are installing Amon for public, replace the public to private on step 5. 
-```
-#./provision.sh private
-```
+If you are installing Amon for public, replace the public to private on step 5. ```#./provision.sh private```
 I have problem getting the SSL certificate due to the IP and domain are mapped. Please map the IP and domain before the installation start.
 
 
 
 # Acknowledgments
-Big thank to [bigcalm](https://github.com/bigcalm/) for providing the installation scripts.
+Big thanks to [bigcalm](https://github.com/bigcalm/) for providing the installation scripts.
 
