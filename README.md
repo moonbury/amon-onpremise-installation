@@ -1,5 +1,5 @@
 # Amon On-Premise Installation
-This document describes the steps i go through during the installation of [amon on-premise](https://docs.amon.cx/onpremise/).
+This document describes the steps I go through during the installation of [amon on-premise](https://docs.amon.cx/onpremise/).
 
 For some reason, I have to install a on-premise amon server for the team. The documenation from amon is good but due to a development conflict/bug, here is the solution.
 
@@ -43,6 +43,7 @@ systemctl restart amon.service
 6.	If everything goes well, you should have amon, postfix, mongo and nginx installed and running.
 7.	Edit the /opt/amon/amon/settings.py and the ALLOWED_HOST on line 214 and restart the nignx
 8.	Edit the /opt/amon/amon/settings.py to the following and restart the postfix.
+```EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'```
 9.	Open a browser and go to the server ip address. You will see a create admin account screen.
 10.	Create an account and try to login.
 11.	Go to Setting > SMTP and try to send a testing email.
